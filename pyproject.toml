@@ -16,9 +16,13 @@ dependencies = [
     "pydantic==2.11.7",
     "loguru==0.7.3",
     "python-dotenv==1.1.1",
+    "click>=8.0.0",
 ]
 
 dynamic = ['version']
+
+[project.scripts]
+marvel-teach = "marvel_characters.cli.main:main"
 
 [project.optional-dependencies]
 dev = ["databricks-connect>=16.0, <17",
